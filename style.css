@@ -1,0 +1,148 @@
+@media all {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body{
+    background-color: cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /*main*/
+
+  /*main - geral*/
+
+  .geral{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(237, 237, 237);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 270px;
+  }
+
+  /*main - pesquisa*/
+
+  .pesquisarCidade{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .pesquisarCidade_agrupar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  #pesquisarcidade{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  #pesquisarcidade:focus{
+    background-color: transparent;
+  }
+
+  .pesquisarCidade_agrupar button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /*main - dados do clima da cidade*/
+
+  .climadacidade{
+    display: none;
+  }
+
+  .climadacidade_Nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .climadacidade_imgclima{
+    background-color: rgb(137, 137, 241);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 5px;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .climadacidade_imgclima img{
+    width: 90px;
+  }
+
+  .climadacidade_imgclima .temperatura {
+    font-size: 29px;
+    font-weight: bold;
+  }
+
+  .climadacidade_imgclima div{
+    color: white;
+  }
+
+  /*main -dados da cidade*/
+
+  .climadacidade_dados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  .climadacidade_dados_div{
+    width: 110px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 5px;
+    justify-content: space-around;
+    gap: 5px;
+  }
+
+  .climadacidade_dados img{
+    width: 30px;
+  }
+
+  .titulodosdados{
+    font-size: 10px;
+  }
+}
+
